@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Martillo de Uña Profesional",
+    "price": 8990,
+    "category": "Herramientas",
+    "image": "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400"
+  },
+  {
+    "id": 2,
+    "name": "Set de Destornilladores 6 Piezas",
+    "price": 12490,
+    "category": "Herramientas",
+    "image": "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400"
+  },
+  {
+    "id": 3,
+    "name": "Cinta Métrica 5 Metros",
+    "price": 3500,
+    "category": "Medición",
+    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400"
+  },
+  {
+    "id": 4,
+    "name": "Taladro Inalámbrico 12V",
+    "price": 45990,
+    "category": "Maquinaria",
+    "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400"
+  },
+  {
+    "id": 5,
+    "name": "Caja de Herramientas Plástica 16''",
+    "price": 14990,
+    "category": "Almacenamiento",
+    "image": "https://images.unsplash.com/photo-1608613304899-ea8098577e38?w=400"
+  }
+]
