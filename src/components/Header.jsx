@@ -1,21 +1,23 @@
-function Header() {
+import SearchBar from './SearchBar.jsx';
+
+function Header({ searchTerm, setSearchTerm }) {
   return (
-    <header style={{
-      backgroundColor: '#1a1a1a',
-      color: '#ffffff',
-      padding: '20px',
-      display: 'flex',
-      alignItems: 'center',
-      gap: '15px',
-      borderRadius: '8px',
-      marginBottom: '20px'
+    <header style={{ 
+      display: 'flex', 
+      justifyContent: 'space-between', 
+      alignItems: 'center', 
+      padding: '15px', 
+      backgroundColor: '#0a0e14',
+      borderBottom: '1px solid #1e293b'
     }}>
-      <span style={{ fontSize: '2rem' }}>🛠️</span>
-      <div>
-        <h1 style={{ margin: 0, fontSize: '1.8rem' }}>Ferretería El Quisco</h1>
-        <p style={{ margin: 0, color: '#aaa', fontSize: '0.9rem' }}>Calidad y confianza en tus manos</p>
+      <h1 style={{ margin: 0, fontSize: '1.3rem', color: '#ffb703', fontWeight: 'bold' }}>
+        Esmasequipo tienda online
+      </h1>
+      <div style={{ width: '55%', maxWidth: '200px' }}>
+        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
     </header>
   );
 }
+
 export default Header;

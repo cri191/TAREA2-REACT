@@ -1,37 +1,58 @@
 [
   {
     "id": 1,
-    "name": "Martillo de Uña Profesional",
-    "price": 8990,
-    "category": "Herramientas",
-    "image": "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=400"
+    "name": "Mancuernas Hexagonales 10kg (Par)",
+    "price": 34990,
+    "category": "Fuerza",
+    "image": "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=400"
   },
   {
     "id": 2,
-    "name": "Set de Destornilladores 6 Piezas",
-    "price": 12490,
-    "category": "Herramientas",
-    "image": "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400"
+    "name": "Mat de Yoga Alta Densidad",
+    "price": 14990,
+    "category": "Flexibilidad",
+    "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=400"
   },
   {
     "id": 3,
-    "name": "Cinta Métrica 5 Metros",
-    "price": 3500,
-    "category": "Medición",
-    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400"
+    "name": "Banda Elasticas de Resistencia",
+    "price": 7990,
+    "category": "Resistencia",
+    "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400"
   },
   {
     "id": 4,
-    "name": "Taladro Inalámbrico 12V",
-    "price": 45990,
-    "category": "Maquinaria",
-    "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400"
+    "name": "Cuerda para Saltar de Alta Velocidad",
+    "price": 5990,
+    "category": "Cardio",
+    "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400"
   },
   {
     "id": 5,
-    "name": "Caja de Herramientas Plástica 16''",
-    "price": 14990,
-    "category": "Almacenamiento",
-    "image": "https://images.unsplash.com/photo-1608613304899-ea8098577e38?w=400"
+    "name": "Rueda Abdominal Ergonómica",
+    "price": 11990,
+    "category": "Core",
+    "image": "https://images.unsplash.com/photo-1600881333168-2ef49b341f30?w=400"
+  },
+  {
+    "id": 6,
+    "name": "Banco de Pesas Ajustable",
+    "price": 49990,
+    "category": "Fuerza",
+    "image": "https://images.unsplash.com/photo-1583454110558-21cbbf4e1b9c?w=400"
+  },
+  {
+    "id": 7,
+    "name": "Set de Pesas Rusas (Kettlebells)",
+    "price": 29990,
+    "category": "Fuerza",
+    "image": "https://images.unsplash.com/photo-1594737625785-9b0a1d2e5c3c?w=400"
+  },
+  {
+   "id": 6,
+    "name": "Pesa Rusa (Kettlebell) 12kg",
+    "price": 24990,
+    "category": "Fuerza",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400" 
   }
 ]
