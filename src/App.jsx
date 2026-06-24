@@ -5,6 +5,7 @@ import Header from './components/Header.jsx';
 import Staff from './components/Staff.jsx';
 import ProductList from './components/ProductList.jsx';
 import Footer from './components/Footer.jsx';
+import Button from './components/ButtonComponent/Button.jsx';
 
 function App() {
   // Estado controlado para la búsqueda por texto

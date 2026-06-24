@@ -1,0 +1,11 @@
+.product-list-empty {
+  color: #4a5568;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
