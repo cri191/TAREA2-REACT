@@ -1,14 +1,16 @@
 import Button from './ButtonComponent/Button.jsx';
-import './productCard.css'; // Importación de los estilos
+import './productCard.css';
 
-function ProductCard({ product }) {
+// Nota: La estructura del objeto 'product' corresponde al tipo 'Product' 
+// definido en '../types/product.types'
+function ProductCard({ product, onClick }) {
   return (
     <div className="product-card">
-      {/* Contenedor de Imagen */}
+      {/* Contenedor de Imagen usando product.thumbnail */}
       <div className="product-image-container">
         <img
-          src={product.image}
-          alt={product.name}
+          src={product.thumbnail}
+          alt={product.title}
           className="product-image"
         />
       </div>
@@ -20,18 +22,20 @@ function ProductCard({ product }) {
         </span>
 
         <h3 className="product-name">
-          {product.name}
+          {product.title}
         </h3>
         
-        <p className="product-price">
-          ${product.price ? product.price.toLocaleString('es-CL') : '0'}
+        <p className="product-description">
+          {product.description}
         </p>
       </div>
 
-      {/* Uso de componente reutilizable Button */}
-      <Button type="primary" onClick={() => alert(`${product.name} añadido`)}>
-        Añadir al carrito
-      </Button>
+      {/* Botón con las propiedades requeridas */}
+      <Button 
+        titulo="Ir a detalles" 
+        onClick={onClick} 
+        secundario={false} 
+      />
     </div>
   );
 }

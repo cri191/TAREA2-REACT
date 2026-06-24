@@ -7,6 +7,9 @@ import ProductList from './components/ProductList.jsx';
 import Footer from './components/Footer.jsx';
 import Button from './components/ButtonComponent/Button.jsx';
 
+// Importamos los estilos separados
+import './App.css'; 
+
 function App() {
   // Estado controlado para la búsqueda por texto
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,13 +20,7 @@ function App() {
   );
 
   return (
-    <div style={{ 
-      backgroundColor: '#0a0e14', 
-      minHeight: '100vh', 
-      color: '#fff',
-      fontFamily: 'sans-serif',
-      paddingBottom: '80px'
-    }}>
+    <div className="app-container">
       
       {/* Header con Input de búsqueda interno */}
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -31,9 +28,9 @@ function App() {
       {/* Fila de vendedores en línea */}
       <Staff />
 
-      {/* Contenedor principal limitado estilo app móvil */}
-      <main style={{ padding: '0 15px 15px 15px', maxWidth: '500px', margin: '0 auto' }}>
-        <h2 style={{ fontSize: '1.1rem', margin: '15px 0', color: '#a0aec0', fontWeight: '600' }}>
+      {/* Contenedor principal */}
+      <main className="main-content">
+        <h2 className="section-title">
           Productos recomendados
         </h2>
 

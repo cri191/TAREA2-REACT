@@ -182,3 +182,28 @@
     border-right-color: var(--border);
   }
 }
+/* Contenedor principal de la aplicación */
+.app-container {
+  background-color: #0a0e14;
+  min-height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+  padding-bottom: 80px;
+}
+
+/* Contenedor principal limitado estilo app móvil */
+.main-content {
+  padding: 0 15px 15px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Título de productos recomendados */
+.section-title {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #a0aec0;
+  font-weight: 600;
+}
+
+

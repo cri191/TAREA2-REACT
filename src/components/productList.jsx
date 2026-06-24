@@ -1,20 +1,40 @@
-import ProductCard from './productCard.jsx';
-import './productList.css'; // Importación de los estilos de la lista
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ProductCard from "./productCard.jsx";
 
-function ProductList({ products }) {
-  if (products.length === 0) {
-    return (
-      <p className="product-list-empty">
-        No hay productos que coincidan con la búsqueda.
-      </p>
-    );
-  }
+import "./productList.css"; // Importamos los estilos de la grilla
+
+function ProductList() {
+  const [products, setProducts] = useState([]); // Eliminado <Product[]>
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch('https://dummyjson.com/products')
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.products);
+      })
+      .catch((err) => {
+        setError(err.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p className="product-list-empty">Cargando productos...</p>;
+  if (error) return <p className="product-list-empty">Hubo un error: {error}</p>;
 
   return (
     <div className="product-list-grid">
-      {/* Uso correcto de key al renderizar la lista mediante map */}
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard 
+          key={product.id} 
+          product={product} 
+          onClick={() => navigate(`${product.id}`)}
+        />
       ))}
     </div>
   );
