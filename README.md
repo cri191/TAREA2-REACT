@@ -21,4 +21,7 @@ Este es un proyecto de E-commerce desarrollado en React  para el Módulo 2 de De
 3. Ejecutar npm run dev para iniciar el servidor de desarrollo local.
 
 ## Capturas de Pantalla
-*(Las agregaremos al final del proyecto
+<img width="899" height="1599" alt="WhatsApp Image 2026-06-13 at 23 36 38" src="https://github.com/user-attachments/assets/c8f2490a-9269-4cc8-b628-35a7cb0ca0c9" />
+<img width="899" height="1599" alt="WhatsApp Image 2026-06-13 at 23 35 59" src="https://github.com/user-attachments/assets/03eb0f8d-b770-4427-a105-fccab34c6461" />
+
+
