@@ -1,28 +1,9 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import ProductCard from "./productCard.jsx";
+import { useNavigate } from 'react-router-dom';
+import ProductCard from './ProductCard'; // O como lo tengas importado
 
-import "./productList.css"; // Importamos los estilos de la grilla
-
-function ProductList() {
-  const [products, setProducts] = useState([]); // Eliminado <Product[]>
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+// Recibimos las props desde App.jsx
+function ProductList({ products, loading, error }) {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch('https://dummyjson.com/products')
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data.products);
-      })
-      .catch((err) => {
-        setError(err.message);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, []);
 
   if (loading) return <p className="product-list-empty">Cargando productos...</p>;
   if (error) return <p className="product-list-empty">Hubo un error: {error}</p>;
@@ -30,10 +11,10 @@ function ProductList() {
   return (
     <div className="product-list-grid">
       {products.map((product) => (
-        <ProductCard 
-          key={product.id} 
-          product={product} 
-          onClick={() => navigate(`${product.id}`)}
+        <ProductCard
+          key={product.id}
+          product={product}
+          onClick={() => navigate(`/product/${product.id}`)} // Ajusta tu ruta si es necesario
         />
       ))}
     </div>
