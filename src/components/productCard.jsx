@@ -40,4 +40,5 @@ function ProductCard({ product, onClick }) {
   );
 }
 
+
 export default ProductCard;
