@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import productsData from './products.json';
 
 import Header from './components/Header.jsx';
-import Staff from './components/Staff.jsx';
+import Staff from './components/StaffComponent/Staff.jsx';
 import ProductList from './components/productList.jsx';
 import Footer from './components/Footer.jsx';
 import Button from './components/ButtonComponent/Button.jsx';
@@ -56,6 +56,10 @@ function App() {
           error={error} 
         />
       </main>
+      {filteredProducts.length === 0 && (
+                <p className="product-list__status"> No se encontraron resultados</p>
+            )}
+      <Footer/> 
     </div>
   );
 }

@@ -71,3 +71,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.product-card__pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}

@@ -28,6 +28,28 @@ function ProductCard({ product, onClick }) {
         <p className="product-description">
           {product.description}
         </p>
+
+        <div className="product-card__pricing">
+          {/* Precio Actual (Con descuento aplicado si existe) */}
+          <span className="product-card__price">
+            $ {product.discountPercentage > 0
+              ? (product.price * (1 - product.discountPercentage / 100)).toFixed(2)
+              : product.price}
+          </span>
+
+          {/* Si hay descuento, mostramos el precio original tachado y el porcentaje */}
+          {product.discountPercentage > 0 && (
+            <>
+              <span className="product-card__original-price">
+                ${product.price}
+              </span>
+              <span className="product-card__discount">
+                {product.discountPercentage}% OFF
+              </span>
+            </>
+          )}
+          
+        </div>
       </div>
 
       {/* Botón con las propiedades requeridas */}
